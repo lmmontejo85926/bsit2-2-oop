@@ -11,11 +11,11 @@ public class Main {
         acc2.displayAccountInfo();
         acc3.displayAccountInfo();
 
-        System.out.println("\n=== Account Operations ===");
+        System.out.println("\n☰ Account Operations ☰");
         acc1.deposit(500);
         acc2.withdraw(300);
 
-        System.out.println("\n=== Interest Calculation ===");
+        System.out.println("\n☰ Interest Calculation ☰");
         System.out.println(acc1.getAccountHolderName() + "'s interest: $" + acc1.calculateInterest());
         System.out.println(acc2.getAccountHolderName() + "'s interest: $" + acc2.calculateInterest());
         System.out.println(acc3.getAccountHolderName() + "'s interest: $" + acc3.calculateInterest());
