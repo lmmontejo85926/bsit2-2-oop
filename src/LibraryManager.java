@@ -55,7 +55,6 @@ public class LibraryManager {
         }
     }
 
-    // 3. Remove a book
     public void removeBook() {
         try {
             if (books.isEmpty()) {
