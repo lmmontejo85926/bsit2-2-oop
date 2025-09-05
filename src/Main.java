@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== Food Ordering System ===\n");
+        System.out.println("═══  Food Ordering System ═══ \n");
         System.out.println("Creating orders and adding items...");
 
         Order order1 = new Order("Lexi Meryl");
