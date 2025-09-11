@@ -1,30 +1,24 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        String choice;
+        System.out.println("\n=== Employee Management System ===\n");
 
-        do {
-            System.out.println("Enter Number 1: ");
-            int number1 = input.nextInt();
-            System.out.println("Enter Number 2: ");
-            int number2 = input.nextInt();
-            System.out.println("Enter Number 3: ");
-            int number3 = input.nextInt();
-            System.out.println("Enter Number 4: ");
-            int number4 = input.nextInt();
-            System.out.println("Enter Number 5: ");
-            int number5 = input.nextInt();
+        Manager manager = new Manager("Alice Smith", 2001, 80000, "Engineering", 15000, 8);
+        Developer developer = new Developer("Bob Johnson", 2002, 70000, "Engineering", "Java", 5);
+        Intern intern = new Intern("Charlie Brown", 2003, 30000, "Engineering", "Tech University", true);
 
-            int totalNumbers = number1 + number2 + number3 + number4 + number5;
-            System.out.println("Total Number: " + totalNumbers);
+        System.out.println("\n--- Employee Details ---");
+        manager.displayInfo();
+        manager.work();
+        System.out.println("Salary: " + manager.calculateSalary());
 
-            System.out.print("\nDo you want to try again? (yes/no): ");
-            input.nextLine();
-            choice = input.nextLine();
-        } while (choice.equalsIgnoreCase("yes"));
+        System.out.println("\n--- Employee Details---");
+        developer.displayInfo();
+        developer.work();
+        System.out.println("Salary: " + developer.calculateSalary());
 
-        System.out.println("Program ended.");
+        System.out.println("\n--- Employee Details ---");
+        intern.displayInfo();
+        intern.work();
+        System.out.println("Salary: " + intern.calculateSalary());
     }
 }
