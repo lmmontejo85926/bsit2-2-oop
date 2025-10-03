@@ -33,11 +33,11 @@ public class Main {
 
 
         System.out.println("═══ Testing Borrowing ═══");
-        manager.borrowItem("B001", student.getName());
+
         student.addBorrowedItem(book1);
         System.out.println("Student " + student.getName() + " borrowed: " + book1.title);
 
-        manager.borrowItem("D001", faculty.getName());
+    
         faculty.addBorrowedItem(dvd1);
         System.out.println("Faculty " + faculty.getName() + " borrowed: " + dvd1.title);
         System.out.println();
